@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <title>Trojan Premium — Cybersecurity Lab</title>
+  <style>
+    :root{--bg:#08090d;--panel:#111219;--red:#ff2638;--muted:#a8a9b4;--line:#292a34}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 50% -15%,#351018 0,transparent 45%),var(--bg);color:#f5f5f7;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{padding:18px 0;border-bottom:1px solid #ffffff12;background:#08090dcc}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;letter-spacing:.12em}.brand span{color:var(--red)}
+    nav a{font-size:.92rem;text-decoration:none;color:#d6d6dc;margin-left:20px}
+    nav a:hover{color:var(--red)}
+    .hero{padding:34px 0 24px}
+    .banner{width:100%;height:auto;display:block;border:1px solid #6f1822;border-radius:14px;box-shadow:0 20px 70px #0008}
+    .notice{margin:22px 0 0;padding:14px 16px;border:1px solid #5b2028;border-left:4px solid var(--red);border-radius:8px;background:#190d12;color:#e6dce0}
+    .notice strong{color:#fff}
+    .section{padding:48px 0}
+    .eyebrow{color:var(--red);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h1,h2{line-height:1.12;margin:8px 0 16px}h1{font-size:clamp(2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.4rem)}
+    p{color:#c5c6cf}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .card{background:linear-gradient(145deg,#15161f,#0d0e13);border:1px solid var(--line);border-radius:12px;padding:22px}
+    .icon{font-size:1.5rem;color:var(--red)}
+    .card h3{margin:8px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:800;border:1px solid var(--red);background:var(--red);color:white;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+    .btn.secondary{background:transparent;color:#fff}
+    .donate{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px;border:1px solid #66202a;border-radius:14px;background:linear-gradient(110deg,#231016,#101118)}
+    .small{font-size:.9rem;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:#858692;font-size:.9rem}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.donate{align-items:flex-start;flex-direction:column}nav{align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}.hero{padding-top:20px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">TROJAN <span>PREMIUM</span></div>
+      <div><a href="#about">Informace</a><a href="#safety">Bezpečnost</a><a href="#donate">Donate</a></div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <img class="banner" src="assets/banner.png" alt="Trojan Premium — černo-červený cyber banner">
+    <div class="notice"><strong>Cybersecurity demo:</strong> Tato stránka je pouze informační ukázka pro vzdělávání a bezpečnostní testování. Neobsahuje malware ani nástroj pro vzdálené ovládání zařízení.</div>
+  </section>
+
+  <section class="section wrap" id="about">
+    <div class="eyebrow">O projektu</div>
+    <h1>Vítej v Cybersecurity Labu</h1>
+    <p>Temný cyber design pro prezentaci bezpečnostního projektu, analýzu hrozeb a vzdělávání. Používej pouze vlastní zařízení nebo prostředí, ke kterému máš výslovné povolení.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">⌕</div><h3>Analýza hrozeb</h3><p>Uč se rozpoznávat podezřelé soubory, neznámé procesy a rizikové odkazy.</p></article>
+      <article class="card"><div class="icon">⛨</div><h3>Ochrana zařízení</h3><p>Udržuj systém aktualizovaný, používej důvěryhodný antivirus a zapni vícefaktorové ověření.</p></article>
+      <article class="card"><div class="icon">⌘</div><h3>Bezpečné testování</h3><p>Testy prováděj v izolovaném virtuálním stroji a nikdy bez souhlasu vlastníka zařízení.</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="safety">
+    <div class="eyebrow">Bezpečnostní pravidla</div>
+    <h2>Testuj zodpovědně.</h2>
+    <p>Projekt neslouží ke krádeži hesel, zaznamenávání kláves, skrytému sledování ani neoprávněnému přístupu. Pokud zkoumáš podezřelý program, neotevírej ho na svém hlavním zařízení a nesdílej ho s ostatními.</p>
+    <a class="btn secondary" href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Bezpečnostní doporučení</a>
+  </section>
+
+  <section class="section wrap" id="donate">
+    <div class="donate">
+      <div><div class="eyebrow">Podpoř projekt</div><h2>Donate</h2><p class="small">Doplň sem svůj ověřený odkaz na dobrovolný příspěvek. Zatím tlačítko nevede na žádnou platební stránku.</p></div>
+      <a class="btn" href="mailto:your-email@example.com?subject=Podpora%20projektu">Kontakt / podpora</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Cybersecurity Lab · Vzdělávací ukázka · Neobsahuje škodlivý software.</div></footer>
+</body>
+</html>
